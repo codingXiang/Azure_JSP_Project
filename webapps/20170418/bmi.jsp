@@ -60,15 +60,15 @@
       <h>
           <%
               class BMI_Handler{
-                float height;
-                float weight;
-                public BMI_Handler(float height , float weight){
+                double height;
+                double weight;
+                public BMI_Handler(double height , double weight){
                   this.height = height;
                   this.weight = weight;
                 }
-                public float calculate(){
+                public double calculate(){
                   // 體重(公斤) / 身高2(公尺2)
-                  float bmi = 0;
+                  double bmi = 0;
                   bmi = this.weight / Math.pow(this.height,2);
                   return bmi;
                 }
@@ -76,8 +76,8 @@
           %>
           <%
               if (request.getParameter("height") != null && request.getParameter("weight") != null){
-                float height = float.valueOf(request.getParameter("height"));
-                float weight = float.valueOf(request.getParameter("weight"));
+                double height = double.valueOf(request.getParameter("height"));
+                double weight = double.valueOf(request.getParameter("weight"));
                 BMI_Handler bmi = new BMI_Handler(height,weight);
                 session.setAttribute("BMI" ,bmi);
                 HttpSession s = request.getSession();
