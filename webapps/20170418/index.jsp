@@ -9,20 +9,20 @@
 <jsp:useBean id="students"
                     class="com.runoob.StudentsBean">
    <jsp:setProperty name="students" property="firstName"
-                    value="小强"/>
+                    value="大明"/>
    <jsp:setProperty name="students" property="lastName" 
                     value="王"/>
    <jsp:setProperty name="students" property="age"
-                    value="10"/>
+                    value="23"/>
 </jsp:useBean>
 
-<p>学生名字:
+<p>名字:
    <jsp:getProperty name="students" property="firstName"/>
 </p>
-<p>学生姓氏:
+<p>姓氏:
    <jsp:getProperty name="students" property="lastName"/>
 </p>
-<p>学生年龄:
+<p>年齡:
    <jsp:getProperty name="students" property="age"/>
 </p>
 
