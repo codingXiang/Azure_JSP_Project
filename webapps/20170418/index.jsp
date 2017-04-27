@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page language="java" 
+    contentType="text/html; charset = UTF-8" 
+    import = "java.sql.*" 
+%>
+
+
 <html>
 <head>
 <title>get 和 set 属性实例</title>
